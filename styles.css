@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 690px;
+  width: 80vw;
   background-color: #fff;
   border-radius: 7px;
   padding: 30px;
@@ -38,7 +38,7 @@ body {
 }
 
 .text-input textarea {
-  height: 250px;
+  height: 30vh;
   width: 100%;
   border: none;
   outline: none;
@@ -49,10 +49,17 @@ body {
   padding: 10px 15px;
 }
 
-.controls {
+.controls, li {
   display: flex;
   list-style: none;
   padding: 12px 15px;
   align-items: center;
   justify-content: space-between;
+}
+
+.controls .icons i {
+  width: 50px;
+  color: #9f9f9f;
+  font-size: 14px;
+  cursor: pointer;
 }
