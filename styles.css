@@ -21,3 +21,8 @@ body {
   border-radius: 7px;
   padding: 30px;
 }
+
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
