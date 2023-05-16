@@ -27,3 +27,6 @@ body {
   border: 1px solid #bbb;
 }
 
+.wrapper .text-input {
+  display: flex;
+}
