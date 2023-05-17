@@ -73,3 +73,9 @@ body {
   font-size: 13px;
   background: none;
 }
+
+.controls .exchange {
+  color: #9f9f9f;
+  font-size: 16px;
+  cursor: pointer;
+}
