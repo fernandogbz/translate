@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #2020f0;
+  background:linear-gradient(#f3f3fb 10%, #377dff);
 }
 
 .container {
@@ -43,7 +43,7 @@ body {
   border: none;
   outline: none;
   resize: none;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 5px;
   background-color: none;
   padding: 10px 15px;
@@ -61,8 +61,15 @@ body {
 }
 
 .controls .icons i {
-  width: 50px;
+  width: 30px;
   color: #9f9f9f;
   font-size: 14px;
   cursor: pointer;
+}
+
+.controls .row select {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background: none;
 }
