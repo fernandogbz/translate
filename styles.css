@@ -60,6 +60,10 @@ body {
   padding: 12px 15px;
 }
 
+.controls .icons {
+  width: 50%;
+}
+
 .controls .icons i {
   width: 30px;
   color: #9f9f9f;
