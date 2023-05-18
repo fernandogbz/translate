@@ -29,5 +29,6 @@ translateBtn.addEventListener("click", () => {
   // And in another then method receiving that object
   fetch(apiUrl).then(res => res.json()).then(data => {
     console.log(data);
+    toText.value = data.responseData.translatedText;
   })
 })
