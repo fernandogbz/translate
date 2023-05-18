@@ -48,14 +48,23 @@ translateBtn.addEventListener("click", () => {
 icons.forEach(icon => {
   icon.addEventListener("click", ({target}) => {
     if(target.classList.contains("fa-copy")) {
+      // if clicked icon has from id, copy the fromTextarea value. Else copy the toTextarea value
       if(target.id == "from") {
-        // if clicked icon has from id, copy the fromTextarea value. Else copy the toTextarea value
         navigator.clipboard.writeText(fromText.value);
       } else {
         navigator.clipboard.writeText(toText.value);
       }
     } else {
-      console.log("Speech icon clicked")
+      let utterance;
+      // if clicked icon has from id, speak the fromTextarea value, else speak the toTextarea value
+      if(target.id == "from") {
+        utterance = new SpeechSynthesisUtterance(fromText.value); //SpeechSynthesisUtterance represents a speech request
+        utterance.lang = selectTag[0].value; // setting utterance language to fromSelect tag value
+      } else {
+        utterance = new SpeechSynthesisUtterance(toText.value);
+        utterance.lang = selectTag[1].value; // setting utterance language to toSelect tag value
+      }
+      speechSynthesis.speak(utterance); // speak the passed utterance
     }
   })
 })
