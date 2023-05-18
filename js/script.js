@@ -3,7 +3,8 @@ const selectTag = document.querySelectorAll("select"),
 fromText = document.querySelector(".from-text"),
 toText = document.querySelector(".to-text"),
 exchangeIcon = document.querySelector(".exchange"),
-translateBtn = document.querySelector("button");
+translateBtn = document.querySelector("button"),
+icons = document.querySelectorAll(".row i");
 
 selectTag.forEach((tag, id) => {
   for (const countryCode in countries) {
