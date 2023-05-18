@@ -19,6 +19,10 @@ selectTag.forEach((tag, id) => {
   }
 })
 
+exchangeIcon.addEventListener("click", () => {
+  
+})
+
 translateBtn.addEventListener("click", () => {
   let text = fromText.value;
   translateFrom = selectTag[0].value; //getting fromSelect tag value
