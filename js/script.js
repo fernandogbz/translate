@@ -2,6 +2,7 @@
 const selectTag = document.querySelectorAll("select"),
 fromText = document.querySelector(".from-text"),
 toText = document.querySelector(".to-text"),
+exchangeIcon = document.querySelector(".exchange"),
 translateBtn = document.querySelector("button");
 
 selectTag.forEach((tag, id) => {
