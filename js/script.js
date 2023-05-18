@@ -1,5 +1,6 @@
 //Getting variables
 const selectTag = document.querySelectorAll("select");
+translateBtn = document.querySelector("button");
 
 selectTag.forEach((tag, id) => {
   for (const countryCode in countries) {
