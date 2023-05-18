@@ -49,9 +49,10 @@ icons.forEach(icon => {
   icon.addEventListener("click", ({target}) => {
     if(target.classList.contains("fa-copy")) {
       if(target.id == "from") {
-        console.log("from copy icon clicked")
+        // if clicked icon has from id, copy the fromTextarea value. Else copy the toTextarea value
+        navigator.clipboard.writeText(fromText.value);
       } else {
-        console.log("to copy icon clicked")
+        navigator.clipboard.writeText(toText.value);
       }
     } else {
       console.log("Speech icon clicked")
