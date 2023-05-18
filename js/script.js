@@ -1,5 +1,6 @@
 //Getting variables
-const selectTag = document.querySelectorAll("select");
+const selectTag = document.querySelectorAll("select"),
+fromText = document.querySelectorAll(".from-text"),
 translateBtn = document.querySelector("button");
 
 selectTag.forEach((tag, id) => {
