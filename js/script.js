@@ -1,6 +1,6 @@
 //Getting variables
 const selectTag = document.querySelectorAll("select"),
-fromText = document.querySelectorAll(".from-text"),
+fromText = document.querySelector(".from-text"),
 translateBtn = document.querySelector("button");
 
 selectTag.forEach((tag, id) => {
@@ -18,5 +18,8 @@ selectTag.forEach((tag, id) => {
 })
 
 translateBtn.addEventListener("click", () => {
-  let text
+  let text = fromText.value;
+  translateFrom = selectTag[0].value; //getting fromSelect tag value
+  translateTo = selectTag[1].value; //getting toSelect tag value
+  console.log(text, translateFrom, translateTo);
 })
