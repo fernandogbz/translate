@@ -44,3 +44,9 @@ translateBtn.addEventListener("click", () => {
     toText.value = data.responseData.translatedText;
   })
 })
+
+icons.forEach(icon => {
+  icon.addEventListener("click", ({target}) => {
+    console.log(target);
+  })
+})
