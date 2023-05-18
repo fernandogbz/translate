@@ -15,3 +15,7 @@ selectTag.forEach((tag, id) => {
     tag.insertAdjacentHTML("beforeend", option); // adding options tag inside select tag
   }
 })
+
+translateBtn.addEventListener("click", () => {
+  let text
+})
